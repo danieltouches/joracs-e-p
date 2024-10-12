@@ -1,0 +1,374 @@
+:root{
+--bg-clr:rgb(1, 1, 15);
+--var-clr:white;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    background-color: var(--bg-clr);
+    width: 100vw;
+    height: 100%;
+    overflow-x:hidden ;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    
+    top: 0%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    height: 75px;
+    background-color:rgba(0, 0, 87, 0.911);
+position: fixed;
+top: 0;
+}
+
+.number{
+  cursor: pointer;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+ul {
+    display: flex;
+    gap: 35px;
+}
+ul li {
+padding: 10px;
+}
+
+ul li:hover{
+    background-color: transparent;
+    border-color: var(--var-clr);
+    border-radius: 35px;
+   border-width: 0.5px;
+   border-style: solid;
+   padding: 15px;
+   transition: all 0.5s;
+
+}
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+.btn-wrap {
+  width: 100%;
+  max-width: 8.75rem;
+  min-width: max-content;
+  height: 3.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.btn-wrap button {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 1.125rem;
+  border: none;
+  background-color: rgba(30, 52, 74, 0.822);
+  overflow: hidden;
+  padding: 8px 16px;
+  position: relative;
+}
+
+.btn-wrap button > * {
+  position: relative;
+  z-index: 1;
+}
+
+.icon-wrap {
+  overflow: hidden;
+  height: max-content;
+  border-radius: 6px;
+}
+
+.btn-icons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+  width: 48px;
+  max-width: 48px;
+  height: 28px;
+  transform: translateX(-48px);
+  transition: transform 0.4s;
+}
+
+.btn-icons > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 48px;
+  background-color: rgb(0, 170, 207);
+  height: 28px;
+}
+
+.btn-wrap:hover .btn-icons {
+  transform: translateX(0);
+  transition: transform 0.4s;
+}
+
+.btn-wrap .text {
+  color: white;
+  transition: color 0.4s;
+}
+
+.btn-wrap:hover .text {
+  color: black;
+  transition: color 0.4s;
+}
+
+.btn-wrap button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color:  rgb(23, 213, 255);
+  border-radius: 12px;
+  transform: translateX(100%);
+  transition: transform 0.4s;
+}
+
+.btn-wrap:hover button::after {
+  transform: translateX(0);
+  transition: transform 0.4s;
+}
+
+.text1{
+   color:rgb(0, 0, 44);
+        font-size: 15px;
+       top: 50px;
+        position:absolute;
+        bottom: 0px;
+        width: 500px;
+        height: 200px;
+        right: 0px;
+        text-align: right;
+      align-items: end;
+      justify-content: end;
+background-color: white;
+}
+ .second-section{
+color: var(--var-clr);
+text-align: center;
+position: relative;
+padding-top: 70px;
+padding-bottom: 70px;
+ }
+
+ .ourservices{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+ }
+ 
+.hover-section1 {
+  width: 700px;
+  height: 450px;
+  background-color: #010a01;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: background ease-in-out;
+  color: white;
+  text-align: center;
+  padding: 20px;
+border: 3px solid var(--bg-clr);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.hover-section1:hover {
+  background-image: url('./assets/construction.jpg');
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+  color: black;
+  /* Removes the black background */
+  transition: background ease-in-out 0.2s;
+}
+
+.hover-section2 {
+  width: 700px;
+  height: 450px;
+  background-color: #010a01;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: background ease-in-out;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border: 3px solid var(--bg-clr);
+  cursor: pointer;
+  overflow: hidden;
+}
+.hover-section2:hover {
+  background-image: url('./assets/oil&gas.jpg');
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: black;
+  background-color: transparent;
+  /* Removes the black background */
+  transition: background ease-in-out 0.2s;
+}
+
+.hover-section3 {
+  width: 700px;
+  height: 450px;
+  background-color: #010a01;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: background ease-in-out;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border: 3px solid var(--bg-clr);
+  cursor: pointer;
+  overflow: hidden;
+}
+.hover-section3:hover {
+  background-image: url('./assets/power.plant.jpg');
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: black;
+  background-color: rgba(0, 0, 0, 0.904);
+  /* Removes the black background */
+  transition: background ease-in-out 0.2s;
+}
+
+.hover-section4 {
+  width: 700px;
+  height: 450px;
+  background-color: #010a01d7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: background ease-in-out;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border: 3px solid var(--bg-clr);
+  cursor: pointer;
+  overflow: hidden;
+}
+.hover-section4:hover {
+  background-image: url('./assets/telecommast.webp');
+  /* Replace with your image path */
+  background-size: cover;
+ 
+  color: black;
+  background-position: center;
+  background-color: transparent;
+  /* Removes the black background */
+  transition: background ease-in-out 0.2s;
+}
+
+.hover-section1:hover .content .arrow {
+  background-color: red;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.hover-section2:hover .content .arrow {
+  background-color: red;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.hover-section3:hover .content .arrow {
+  background-color: red;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.hover-section4:hover .content .arrow {
+  background-color: red;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.section1 {
+  display: flex;
+
+}
+
+.section2 {
+  display: flex;
+  padding-bottom: 500px;
+}
+.home-footer{
+  display: flex;
+  background-color: rgb(20, 20, 43);
+}
+.home-footer-logo{
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-top: 25px;
+}
+.text-1{
+  color: white;
+  padding-bottom: 20px;
+  padding-left: 30px;
+}
+.text-2{
+  color: white;
+
+}
+.text-2-header{
+  color: white;
+  padding-top: 25px;
+}
+.section{
+color: white;
+}
+.logo2{
+  display: flex;
+  padding: 7px;
+}
+.gmail{
+padding-left: 9px;
+cursor: pointer;
+}
+.twitter{
+  padding-left: 9px;
+  cursor: pointer;
+}
+.facebook{
+  padding-left: 30px;
+  cursor: pointer;
+}
+.sectiono{
+padding-left: 25px;
+padding-right: 25px;
+padding-top: 25px;
+cursor: pointer;
+}
+.sectionoo{
+  padding-left: 25px;
+  color: white;
+}
